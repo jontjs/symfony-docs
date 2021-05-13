@@ -2531,7 +2531,7 @@ The solution is to configure the ``default_uri`` option to define the
         framework:
             router:
                 # ...
-                default_uri: 'https://example.org/my/path/'
+                default_uri: 'https://example.org/my/path'
 
     .. code-block:: xml
 
@@ -2546,7 +2546,7 @@ The solution is to configure the ``default_uri`` option to define the
                 https://symfony.com/schema/dic/symfony/symfony-1.0.xsd">
 
             <framework:config>
-                <framework:router default-uri="https://example.org/my/path/">
+                <framework:router default-uri="https://example.org/my/path">
                     <!-- ... -->
                 </framework:router>
             </framework:config>
@@ -2558,7 +2558,7 @@ The solution is to configure the ``default_uri`` option to define the
         $container->loadFromExtension('framework', [
             'router' => [
                 // ...
-                'default_uri' => "https://example.org/my/path/",
+                'default_uri' => "https://example.org/my/path",
             ],
         ]);
 
